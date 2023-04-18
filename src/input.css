@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "sego";
+  src: url("./fonts/segoesc.ttf");
+}
+
+@layer base {
+  p,
+  span,
+  a,
+  small {
+    font-family: "Open Sans", sans-serif;
+    /* color: #222529; */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button {
+    font-family: "Poppins", sans-serif;
+    /* color: #222529; */
+  }
+
+  box-shadow {
+    box-shadow: 0px 0px 10px 0px #ccc;
+  }
+}
