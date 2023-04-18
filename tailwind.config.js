@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'futura-medium': ['Futura-Medium', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
