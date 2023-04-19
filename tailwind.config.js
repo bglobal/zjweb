@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       fontFamily: {
         'futura-medium': ['Futura-Medium'],
-        'test': ['SedgwickAveDisplay-Regular'],
       },
     },
   },
