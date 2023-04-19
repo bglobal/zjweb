@@ -427,7 +427,6 @@ p,
   a,
   small {
   font-family: "futura";
-  /* color: #222529; */
 }
 
 h1,
@@ -438,11 +437,6 @@ h1,
   h6,
   button {
   font-family: "futura";
-  /* color: #222529; */
-}
-
-box-shadow {
-  box-shadow: 0px 0px 10px 0px #ccc;
 }
 
 *, ::before, ::after {
@@ -577,6 +571,10 @@ box-shadow {
   grid-column: span 2 / span 2;
 }
 
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
@@ -585,52 +583,68 @@ box-shadow {
   margin: auto;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
   display: grid;
 }
 
-.h-\[500px\] {
-  height: 500px;
+.list-item {
+  display: list-item;
 }
 
-.h-\[00px\] {
-  height: 00px;
-}
-
-.h-\[300px\] {
-  height: 300px;
-}
-
-.min-h-\[600px\] {
-  min-height: 600px;
-}
-
-.w-\[250px\] {
-  width: 250px;
+.w-\[350px\] {
+  width: 350px;
 }
 
 .w-\[80px\] {
   width: 80px;
 }
 
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-full {
-  width: 100%;
-}
-
 .w-\[\] {
   width: ;
 }
 
-.w-\[350px\] {
-  width: 350px;
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .grid-cols-1 {
@@ -641,8 +655,8 @@ box-shadow {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -669,19 +683,13 @@ box-shadow {
   gap: 1.25rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .bg-\[\#010425\] {
   --tw-bg-opacity: 1;
   background-color: rgb(1 4 37 / var(--tw-bg-opacity));
-}
-
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .px-5 {
@@ -699,11 +707,6 @@ box-shadow {
   padding-bottom: 0.5rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -713,12 +716,20 @@ box-shadow {
   padding-bottom: 1.25rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
   text-align: center;
+}
+
+.font-futura {
+  font-family: futura;
+}
+
+.font-gill {
+  font-family: gill;
 }
 
 .text-\[12px\] {
@@ -727,6 +738,18 @@ box-shadow {
 
 .text-\[18px\] {
   font-size: 18px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-bold {
@@ -750,63 +773,23 @@ box-shadow {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\] {
+  color: ;
+}
+
 @font-face {
   font-family: "futura";
 
-  src: url("./fonts/Futura-Medium.ttf");
+  src: url("./../dist/assets/fonts/futura.ttf");
 }
 
 @font-face {
-  font-family: "test";
+  font-family: "gill";
 
-  src: url("./fonts/SedgwickAveDisplay-Regular.ttf");
+  src: url("./../dist/assets/fonts/gill.ttf");
 }
 
 @media (min-width: 640px) {
-  .sm\:h-\[600px\] {
-    height: 600px;
-  }
-
-  .sm\:h-full {
-    height: 100%;
-  }
-
-  .sm\:max-h-\[600px\] {
-    max-height: 600px;
-  }
-
-  .sm\:min-h-0 {
-    min-height: 0px;
-  }
-
-  .sm\:min-h-\[\] {
-    min-height: ;
-  }
-
-  .sm\:min-h-\[600px\] {
-    min-height: 600px;
-  }
-
-  .sm\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .sm\:w-full {
-    width: 100%;
-  }
-
-  .sm\:max-w-full {
-    max-width: 100%;
-  }
-
-  .sm\:max-w-\[\] {
-    max-width: ;
-  }
-
-  .sm\:max-w-\[100\%\] {
-    max-width: 100%;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -822,12 +805,20 @@ box-shadow {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .md\:w-\[50\%\] {
     width: 50%;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:w-\[60\%\] {
+    width: 60%;
   }
 
   .md\:grid-cols-4 {

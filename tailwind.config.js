@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'futura-medium': ['Futura-Medium'],
+        'futura': ['futura'],
+        'gill': ['gill'],
       },
     },
   },
