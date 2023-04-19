@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
-        'futura-medium': ['Futura-Medium', 'sans-serif'],
+        'futura-medium': ['Futura-Medium'],
+        'test': ['SedgwickAveDisplay-Regular'],
       },
     },
   },
