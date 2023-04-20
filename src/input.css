@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "futura";
-  src: url("/dist/assets/fonts/futura.ttf");
+  src: url("/assets/fonts/futura.ttf");
 }
 @font-face {
   font-family: "gill";
-  src: url("/dist/assets/fonts/gill.ttf");
+  src: url("/assets/fonts/gill.ttf");
 }
 
 @layer base {
